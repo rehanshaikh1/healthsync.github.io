@@ -310,7 +310,7 @@ a.btn.mt-md-3.contactus:hover {
   text-align: justify;
 }
 
-.bottom-border-t::after {
+/* .bottom-border-t::after {
   content: "";
   display: block;
   width: 200px;
@@ -319,7 +319,7 @@ a.btn.mt-md-3.contactus:hover {
   margin-top: 25px;
   background: #4e22a6;
 }
-
+ */
 /*blog section*/
 #healthblog {
   background-color: #fff8f7;
