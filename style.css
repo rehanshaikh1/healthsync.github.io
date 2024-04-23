@@ -270,19 +270,17 @@ a.btn.mt-md-3.contactus:hover {
 .flex-list-item {
   flex: 1 1 150px; /* Adjust '150px' to change the minimum column width before wrapping */
   margin: 10px; /* Adds space between items */
-  background-color: #ffffff; /* Item background color */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow to each item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional: adds a subtle shadow to each item */
   padding: 10px; /* Padding inside each item */
   box-sizing: border-box; /* Ensures padding does not affect the overall defined width */
   text-align: center; /* Centers text inside each item */
+  font-size: 15px;
 }
 .service-ul li {
   font-family: "poppins";
-  border: 1px solid #a690d2;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   padding: 20px;
 }
 .s-img {
@@ -361,10 +359,21 @@ h6 {
   color: #aeaeae;
 }
 #healthblog .card-body a:hover {
+  color: #4e22a6 !important;
+  background-color: #fff !important;
+}
+#healthblog .card:hover {
   color: #fff;
   background-color: #4e22a6;
 }
-
+#healthblog .card:hover span{
+  color: #fff;
+}
+#healthblog .card:hover a{
+  color: #fff;
+  background-color: #4e22a6;
+  border-color: #fff;
+}
 .health-blog {
   background-color: var(--background-color);
   color: var(--text-color);
