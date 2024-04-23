@@ -144,7 +144,14 @@ header .line {
   height: 25px;
   background: #4e22a6;
 }
+.navbar-toggler {
+  color: #4e22a6;
+}
 
+.navbar-toggler:focus {
+
+  box-shadow: none;
+}
 /* homesection */
 
 #homesection {
@@ -169,17 +176,26 @@ header .line {
 } */
 
 #homesection .content {
-  padding-top: 150px;
+  /* padding-top: 150px; */
   color: #fff;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  height: 80vh;
 }
-
 a.btn.mt-md-3.contactus {
   background: #4e22a6;
-  padding: 10px 20px;
+  padding: 15px 10px;
   border-radius: 30px;
   color: #fff;
+  font-weight: 500;
+  width: 250px;
 }
-
+a.btn.mt-md-3.contactus:hover {
+  background-color: #fff;
+  color: #4e22a6;
+}
 .emphasis {
   color: #555;
   background-color: #eef;
@@ -412,6 +428,10 @@ h6 {
 .contactus form textarea {
   height: 100%;
 }
+/*Footer */
+footer img {
+  width: 250px;
+}
 
 /* back to top */
 .back-to-top {
@@ -436,6 +456,7 @@ h6 {
   .health-blog .btn-primary {
     margin-bottom: 20px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -445,11 +466,34 @@ h6 {
   .img-col img {
     width: auto;
   }
+  footer img {
+    width: 150px;
+}
+#homesection .content h1{
+  font-size: 2rem;
+}
+#homesection .content{
+  padding:0 30px;
+}
+#homesection .content p {
+  font-size: 1rem;
+  word-spacing: 10px;
+}
+#homesection .content {
+  height: 75vh;
+}
 }
 
 @media (max-width: 992px) {
   a.nav-link.text-dark {
     font-size: 15px;
+    padding: 10px 20px;
+  }
+  a.nav-link.text-dark:focus{
+    font-size: 15px;
+    background: #a690d2;
+    padding: 10px 20px;
+
   }
   .nav-logo {
     width: 170px;
@@ -499,6 +543,3 @@ h6 {
 }
 }
 
-.navbar-toggler {
-  background-color: #4e22a6;
-}
