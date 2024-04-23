@@ -5,7 +5,11 @@ document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(anchor => {
 
     const target = document.querySelector(this.getAttribute('href'));
     const navbarHeight = document.querySelector('.navbar').offsetHeight;
-    const offsetTop = target.offsetTop - navbarHeight;
+    let offsetTop = target.offsetTop;
+
+    if (window.innerWidth >= 768) {
+      offsetTop -= navbarHeight;
+    }
 
     window.scrollTo({
       top: offsetTop,
@@ -30,8 +34,6 @@ window.addEventListener('scroll', function() {
     document.body.style.paddingTop = 0;
   }
 });
-
-
 
 const showOnPx = 500;
 const backToTopButton = document.querySelector(".back-to-top");
