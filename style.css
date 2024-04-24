@@ -1,27 +1,3 @@
-/*loader*/
-/* #loader-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; 
-} */
-.ln-c {
-  width: 150px;
-  height: 3px;
-  margin: 20px 0;
-  background: #4e22a6;
-}
-/* #loader-overlay img {
-  width: 500px;
-  height: auto;
-} */
-
 /* general code */
 .lg-color {
   color: #4e22a6;
@@ -71,7 +47,12 @@ video {
 video:hover {
   transform: scale(1.05);
 }
-
+.ln-c {
+  width: 150px;
+  height: 3px;
+  margin: 20px 0;
+  background: #4e22a6;
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -163,7 +144,7 @@ header .line {
   width: 100%;
   height: 85vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-    url(https://www.forbesindia.com/fbimages/900x600/proportional/jpeg/blog/wp-content/uploads/2014/09/healthcare.jpg);
+    url('healthcare.jpg');
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -308,6 +289,10 @@ a.btn.mt-md-3.contactus:hover {
 .servic-e-cont .each-serve .col-lg-6:nth-child(4) .t-content{
   border-bottom-right-radius: 20px; /* Adjust the value as needed */
 }
+.servic-e-cont .s-img:hover{
+  transform: scale(1.2);
+  overflow: hidden;
+}
 /*about section*/
 
 .about-content p {
@@ -315,6 +300,15 @@ a.btn.mt-md-3.contactus:hover {
   text-align: justify;
 }
 
+/* .bottom-border-t::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  margin-left: 41%;
+  margin-top: 25px;
+  background: #4e22a6;
+} */
 
 /*blog section*/
 #healthblog {
@@ -353,6 +347,10 @@ h6 {
 }
 #healthblog .card-body p {
   color: #aeaeae;
+}
+#healthblog .card-body a:hover {
+  color: #4e22a6 !important;
+  background-color: #fff !important;
 }
 #healthblog .card-body a:hover {
   color: #4e22a6 !important;
@@ -437,7 +435,11 @@ h6 {
 footer img {
   width: 250px;
 }
-
+footer{
+  background-color: #a690d2;
+  padding-top: 50px !important;
+  padding-bottom: 40px !important;
+}
 /* back to top */
 .back-to-top {
   position: fixed;
