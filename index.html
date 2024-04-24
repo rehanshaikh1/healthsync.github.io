@@ -9,36 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <script>
-     window.onload = function() {
-    // Show loader overlay
-    var loaderOverlay = document.getElementById('loader-overlay');
-    loaderOverlay.style.display = 'flex'; // Show the loader overlay
 
-    // Set timeout to hide the loader after 5 seconds
-    setTimeout(function() {
-        loaderOverlay.style.display = 'none'; // Hide the loader overlay
-    }, 5000); // 5000 milliseconds = 5 seconds
-}
-
-    </script>  -->
-
-    <!-- <div id="loader-overlay">
-      <img src="https://www.icegif.com/wp-content/uploads/2023/07/icegif-1262.gif" alt="Loading...">
-    </div> -->
     <header>
       <div class="line"></div>
       <nav class="navbar navbar-expand-md bg-gradient ">
         <div class="container">
           <a href="#" class="navbar-brand h1 text-uppercase text-dark">
-            <img src="logo.png" class="nav-logo" alt="" width="250px">
+            <img src="logo.svg" class="nav-logo" alt="" width="250px">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"> <i class="fa-solid fa-bars" id="barsIcon"></i>
@@ -80,22 +65,23 @@
     </script>
     <section id="homesection">
       <div class="container">
-        <div class="content">
-          <h1 class="h1"> Explore health care with <span class="lg-color text-uppercase">US</span>
+        <div class="content" data-aos="zoom-in">
+          <h1 class="h1"> Explore health care with <span class=" text-uppercase">US</span>
           </h1>
           <p class="mt-4 lead lh-base"> At HealthSynch, we partnered with a network of clinics across the country to offer convenient and affordable healthcare services. Our goal is to help employers keep their workforce healthy and productive. We customize healthcare solutions to meet specific business needs, ensuring compliance with regulations. We care about our clients and their employees, striving to create a thriving and healthy work environment through exceptional service and results </p>
-          <a href="#" class="btn mt-md-3 contactus" data-bs-toggle="modal" data-bs-target="#contactForm">Contact US Now</a>
+          <a href="#contactus" class="btn mt-md-3 contactus" >Contact US Now</a>
         </div>
       </div>
     </section>
+
     <!-- About US section-->
     <section class="p-5" id="aboutus">
       <div class="container">
         <div class="row gy-3">
-          <div class="col-md-6 img-col">
+          <div class="col-md-6 img-col" data-aos="fade-right">
             <img src="about.svg" alt="HealthSynch" class="mt-3 mt-md-0 h-syncimg" />
           </div>
-          <div class="container  col-md-6 lead about-content pt-5">
+          <div class="container  col-md-6 lead about-content pt-5 " data-aos="fade-left">
             <h2>
               <span class="highlight ">Hey there! 👋 Welcome to Health Sync</span>
             </h2>
@@ -103,7 +89,7 @@
             <p>We're not just any company; we're a proud <span class="emphasis">minority women-owned business</span>, bringing over <span class="emphasis">30 years of healthcare expertise</span> right to your doorstep. We get it—being an employer is no small feat, especially when it comes to ensuring your team has access to convenient and affordable healthcare. That's where we shine! </p>
             <p>Our mantra? <span class="highlight emphasis">Efficiency is king.</span> We're all about getting you those timely results and dotting the i's and crossing the t's on all your documents making sure your business operations run as smoothly </p>
           </div>
-          <div class="col-md-12 lead about-content">
+          <div class="col-md-12 lead about-content" data-aos="fade-in">
             <p> as possible. And let's not forget the ever-evolving maze of employee health. It's a lot, but don't worry, we've got your back. With personalized support, we're here to navigate the complexities, helping you sail smoothly towards success.</p>
             <p>So, why choose us? Because we believe in more than just transactions. We're here to make a difference, ensuring that your employees are healthy, happy, and ready to conquer the world. <span class="highlight emphasis">Let's make healthcare a worry of the past, together. 🌟</span>
             </p>
@@ -115,13 +101,13 @@
     <section class="p-5" id="ourdiff">
       <div class="container">
         <div class="row gy-3">
-          <div class="col-md-12 col-lg-6 ">
+          <div class="col-md-12 col-lg-6 " data-aos="fade-right">
             <h2>Our Difference</h2>
             <div class="ln-c"></div>
             <p>Where we're redefining the healthcare experience, one employer at a time. 🌈 As a proud women-owned and minority-owned powerhouse, we bring over 20 years of in-depth healthcare expertise right to your doorstep. Dive into the HealthSynch difference and feel the impact firsthand.</p>
             <h4 class="my-3">Here's what sets us apart:</h4>
           </div>
-          <div class="col-md-12 col-lg-6">
+          <div class="col-md-12 col-lg-6 " data-aos="fade-left">
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="box">
@@ -141,28 +127,28 @@
           </div>
           <div class="col-md-12 mt-3">
             <div class="row">
-              <div class="col-md-6 col-lg-3 col-sm-12 mt-3 mt-md-0 ">
+              <div class="col-md-6 col-lg-3 col-sm-12 mt-3 mt-md-0 " data-aos="fade-right">
                 <div class="box">
                   <i class="fa-solid fa-fingerprint"></i>
                   <h4>A vast network of clinics at your fingertips:</h4>
                   <p>Say goodbye to the hassle of finding the right healthcare provider. We've got a comprehensive network ready for you.</p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 col-sm-12 mt-3 mt-md-0">
+              <div class="col-md-6 col-lg-3 col-sm-12 mt-3 mt-md-0" data-aos="fade-right">
                 <div class="box">
                   <i class="fa-solid fa-calendar-check"></i>
                   <h4>Hassle-free appointment scheduling:</h4>
                   <p> Your time is precious. Let us take care of scheduling your appointments, so you can focus on what you do best.</p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 col-sm-12 mt-3 mt-md-3 mt-lg-0">
+              <div class="col-md-6 col-lg-3 col-sm-12 mt-3 mt-md-3 mt-lg-0" data-aos="fade-left">
                 <div class="box">
                   <i class="fa-regular fa-clock"></i>
                   <h4>Forget-me-not reminders:</h4>
                   <p> Annual testing requirements? Consider them remembered. We'll send you timely reminders, so you're always compliant and ahead of the curve.</p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 col-sm-12 mt-3 mt-md-3 mt-lg-0">
+              <div class="col-md-6 col-lg-3 col-sm-12 mt-3 mt-md-3 mt-lg-0" data-aos="fade-left">
                 <div class="box">
                   <i class="fa-solid fa-headset"></i>
                   <h4>Your personal Customer Service Representative:</h4>
@@ -180,7 +166,7 @@
       <div class="container">
         <div class="row gy-3">
           <div class="col-md-12 d-flex flex-column align-items-center justify-content-center">
-            <h1>Our Services</h1>
+            <h1 data-aos="zoom-in">Our Services</h1>
             <div class="ln-c"></div>
             <p>Our wide range of services includes:</p>
             <ul class="flex-list-container service-ul px-0">
@@ -219,8 +205,8 @@
             <!-- <div class="services-list"><div class="col-6">Physicals</div><div class="col-6">Raspiratory Exams</div><div class="col-6">Fitness for Duty</div><div class="col-6">DOT Random Consortium</div><div class="col-6">Breath Alcohal Testing</div><div class="col-6">X-Ray</div><div class="col-6">PPD skin test and reading</div><div class="col-6">Osha respirator questionnaire review and Fit testing</div><div class="col-6">Labwork</div><div class="col-6">Immunizations</div></div> -->
           </div>
           <div class="servic-e-cont">
-            <div class="each-serve row">
-              <div class="col-lg-6 col-md-12 p-0">
+            <div class="each-serve row" >
+              <div class="col-lg-6 col-md-12 p-0" data-aos="fade-right">
                 <div class="t-content">
                 <h3>
                   <span class="highlight">Drug Testing</span>
@@ -251,13 +237,13 @@
                 </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12 p-0">
-                <img src="https://a-us.storyblok.com/f/1014904/a58c31ba80/drug-testing-featured-image-1.webp/m/" class="s-img img-fluid" alt="">
+              <div class="col-lg-6 col-md-12 p-0 overflow-hidden" data-aos="fade-left">
+                <img src="drug.png" class="s-img img-fluid" alt="">
               </div>
-              <div class="col-lg-6 col-md-12 p-0">
-                <img src="https://www.healthyhcl.in/wp-content/uploads/2023/08/fit-as-a-fiddle.jpg" class="s-img img-fluid" alt="">
+              <div class="col-lg-6 col-md-12 p-0 overflow-hidden" data-aos="fade-right">
+                <img src="physcial.jpg" class="s-img img-fluid" alt="">
               </div>
-              <div class="col-lg-6 col-md-12  p-0">
+              <div class="col-lg-6 col-md-12  p-0" data-aos="fade-left">
                 <div class="t-content"> 
                 <h3>
                   <span class="highlight">Physicals</span>
@@ -294,14 +280,14 @@
     <section class="p-5" id="healthblog" id="healthblog">
       <div class="container">
         <div class="d-flex justify-content-center flex-column align-items-center">
-        <h1 class="h1 text-center my-4 bottom-border-t">Latest from Our Health Blog</h1>
+        <h1 class="h1 text-center my-4 bottom-border-t" data-aos="zoom-in">Latest from Our Health Blog</h1>
         <div class="ln-c"></div>
       </div>
         <div class="row g-4 py-5">
           <!-- Blog Post 1 -->
-          <div class="col-lg-4 col-md-12">
+          <div class="col-lg-4 col-md-12" data-aos="fade-right">
             <div class="card">
-              <img src="https://media.istockphoto.com/id/1396801907/photo/a-small-hud-with-a-human-body-image-and-a-scientist-or-a-doctor-working-with-it.jpg?s=612x612&w=0&k=20&c=iN7Yqvso-n8lK06n_LE7Os0egKFw-WhUzIMKFDoMh5c=" class="card-img-top" alt="Blog Image 1">
+              <img src="blog-1.jpg" class="card-img-top" alt="Blog Image 1">
               <div class="card-body my-3">
                 <span class="date lg-color mb-3 ">18 July 2024 / Health Blog</span>
                 <h3 class="card-title">The Future of Healthcare Technology</h3>
@@ -311,9 +297,9 @@
             </div>
           </div>
           <!-- Blog Post 2 -->
-          <div class="col-lg-4 col-md-12">
+          <div class="col-lg-4 col-md-12" data-aos="fade-up">
             <div class="card">
-              <img src="https://media.istockphoto.com/id/1363588189/photo/healthy-lifestyle-on-ketogenic-diet-eating-clean-keto-food-good-health-dietary-in-heart-dish.jpg?s=612x612&w=0&k=20&c=RVW_a2Bq3eYeUWqkUbTUHkiQbGJaAMa9Q2fyljGymgY=" class="card-img-top" alt="Blog Image 2">
+              <img src="blog-2.jpg" class="card-img-top" alt="Blog Image 2">
               <div class="card-body my-3">
                 <span class="date lg-color mb-3 ">18 July 2024 / Health Blog</span>
                 <h3 class="card-title">Wellness Tips for a Healthy Routine</h3>
@@ -323,9 +309,9 @@
             </div>
           </div>
           <!-- Blog Post 3 -->
-          <div class="col-lg-4 col-md-12">
+          <div class="col-lg-4 col-md-12" data-aos="fade-left">
             <div class="card">
-              <img src="https://static.vecteezy.com/system/resources/thumbnails/005/243/367/small/medicine-doctor-hand-working-with-modern-computer-interface-as-medical-concept-free-photo.jpg" class="card-img-top" alt="Blog Image 3">
+              <img src="blog-3.jpg" class="card-img-top" alt="Blog Image 3">
               <div class="card-body my-3">
                 <span class="date lg-color mb-3 ">18 July 2024 / Health Blog</span>
                 <h3 class="card-title">Updates on Public Health Issues</h3>
@@ -341,7 +327,7 @@
     <section class="contactus" id="contactus">
       <div class="container my-5">
         <div class="row">
-          <div class="col-md-12 col-lg-3 d-flex align-items-center odetailcol">
+          <div class="col-md-12 col-lg-3 d-flex align-items-center odetailcol" data-aos="fade-right">
             <div class="c-details ">
               <h3>Our Details</h3>
               <p class="my-4">Feel Free to reach Us!</p>
@@ -376,7 +362,7 @@
           </div>
           <div class="col-md-12 col-lg-9 px-5">
             <form>
-              <h1>Contact Us</h1>
+              <h1 data-aos="fade-in">Contact Us</h1>
               <div class="row my-5">
                 <div class="mb-3 col-md-6 col-sm-12">
                   <label for="name" class="form-label">First Name</label>
@@ -411,8 +397,8 @@
     </div>
     </div>
     </div>
-    <footer class="bg-gradient p-3 text-center text-dark">
-      <p class="fw-normal"> &copy; 2023 <img src="logo.png" alt="Health Synch" />
+    <footer class="bg-gradient text-center text-dark">
+      <p class="fw-normal"> &copy; 2023 <img src="logo.svg" alt="Health Synch" />
         <!--a class="link-light">Health Synch</a--> All Rights Reserved.
       </p>
     </footer>
@@ -422,5 +408,13 @@
     </button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script>
+      AOS.init({
+          duration: 800, // Duration of animations
+          easing: 'ease-in-out', // Easing option
+          once: true // Whether animations should only happen once
+      });
+  </script>
+  
   </body>
 </html>
