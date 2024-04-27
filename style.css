@@ -8,14 +8,14 @@ section{
 .lg-color {
   color: #4e22a6;
 }
-a,
+a,button,
 span {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -28,7 +28,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 .card {
   transition: all 0.2s;
@@ -149,7 +150,8 @@ header .line {
 #homesection {
   width: 100%;
   height: 85vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),url('healthcare.jpg');
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url('../img/healthcare.jpg');
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -223,6 +225,9 @@ a.btn.mt-md-3.contactus:hover {
 }
 
 /*Service section*/
+/* #ourservices{
+  background-color: #fff8f7;
+} */
 .service-title {
   color: #0056b3;
   font-weight: bold;
@@ -268,7 +273,7 @@ a.btn.mt-md-3.contactus:hover {
   font-size: 15px;
 }
 .service-ul li {
-  font-family: "poppins";
+  font-family: "Inter";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,7 +304,9 @@ a.btn.mt-md-3.contactus:hover {
   overflow: hidden;
 }
 /*about section*/
-
+#aboutus{
+  background-color: aliceblue;
+}
 .about-content p {
   line-height: 1.8;
   text-align: justify;
@@ -327,16 +334,9 @@ a.btn.mt-md-3.contactus:hover {
   display: flex;
   flex-direction: column;
   padding: 20px 27px;
-  font-family: "poppins";
+  font-family: "inter";
 }
-#healthblog .card-body h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "poppins";
-}
+
 #healthblog .card img {
   height: 300px;
   object-fit: cover;
@@ -392,23 +392,39 @@ h6 {
   background-color: darken(var(--accent-color), 10%);
   border-color: darken(var(--accent-color), 10%);
 }
-
+#loadMoreBtn {
+  background: #4e22a6;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 30px;
+  border-color: #4e22a6;
+}
+#loadMoreBtn:focus{
+  outline: none;
+  box-shadow: none;
+}
+#loadMoreBtn:hover {
+  background: #fff;
+  color: #4e22a6;
+  border-color: #4e22a6;
+}
 /*contact section*/
-
+.contactus{
+  background-color: aliceblue;
+}
 .c-details {
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   padding: 40px;
   color: #8b8c90;
+  background-color: #fff;
 }
 .c-details i {
   font-size: 30px;
 }
 .contactus form {
-  font-family: "poppins";
+  font-family: "inter";
 }
-.contactus form h1 {
-  font-family: "poppins";
-}
+
 .contactus form .formsubmitbtn {
   background: #4e22a6;
   padding: 10px 20px;
@@ -427,7 +443,7 @@ h6 {
   height: 50px;
   color: #1e344c;
   border: 1px solid #ebebeb;
-  background-color: transparent;
+  background-color: #fff;
   border-radius: 0;
   font-size: 16px;
   /* padding: 10px 20px; */
@@ -441,9 +457,8 @@ footer img {
   width: 250px;
 }
 footer{
-  background-color: #a690d2;
-  padding-top: 50px !important;
-  padding-bottom: 40px !important;
+  padding-top: 25px !important;
+  padding-bottom: 15px !important;
 }
 /* back to top */
 .back-to-top {
@@ -457,17 +472,141 @@ footer{
   border-radius: 50%;
   border: 1px solid;
 }
-.back-to-top:hover {
-  background-color: #a690d2 !important;
-  color: #fff !important;
-  border: 1px solid;
+.back-to-top:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-  .health-blog .btn-primary {
-    margin-bottom: 20px;
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
   }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+}
+}
+.our-team{
+  background-color: aliceblue;
+}
+
+.our-team .card-img-top{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    left: 80px;
+    top: -80px;
+    object-fit: cover;
+}
+.our-team .card{
+    border-radius: 10px;
+    border: 1px solid #a690d2;
+    cursor: pointer;
+    margin-top: 100px !important;
+}
+.our-team .card:hover{
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+
+}
+.our-team .card-body{
+    margin-top: -50px;
+}
+.our-team .bi{
+    font-size: 25px;
+}
+.our-team .bi:hover{
+  color: #4e22a6;
+}
+
+
+
+.testinomial{
+  background-color: #f0f8ff;
+}
+
+
+.testinomial .heading h3 {
+  color: #AEAEAE;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+
+.testinomial .container {
+  padding: 2rem 0 0 0;
+}
+
+.testinomial .container .row .col-lg-4 .box {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.testinomial .container .row .col-lg-4 .box p {
+  color: #AEAEAE;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2;
+  margin: 20px 0;
+}
+
+.testinomial .container .row .col-lg-4 .box .text {
+  font-family: var(--p-font);
+}
+
+.testinomial .container .row .col-lg-4 .box .text h4 {
+  font-size: 1.25rem;
+  color: #4e22a6;
+}
+
+.testinomial .container .row .col-lg-4 .box .text h5 {
+  color: #333;
+  font-size: 1rem;
+}
+
+.testinomial .container .row .col-lg-4 .box .icon {
+  position: absolute;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  background-color: #4e22a6;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.testinomial .container .row .col-lg-4 .box .img-box {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.testinomial .container .row .col-lg-4:nth-child(1) .box .img-box {
+  background-image: url("https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80");
+}
+.testinomial .container .row .col-lg-4:nth-child(2) .box .img-box {
+  background-image: url("https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.testinomial .container .row .col-lg-4:nth-child(3) .box .img-box {
+  background-image: url("https://images.pexels.com/photos/6033064/pexels-photo-6033064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+@media (max-width: 768px) {
+#healthblog .card-body {
+  padding: 15px 23px;
+}
 
 }
 
@@ -506,10 +645,17 @@ footer{
     background: #a690d2;
     padding: 10px 20px;
 
+    
   }
+.testinomial .container .row .col-lg-4 .box {
+    margin-bottom: 60px;
+}
   .nav-logo {
     width: 170px;
   }
+  footer img {
+    width: 190px;
+}
   .odetailcol{
     display: block !important;
     margin-bottom: 50px;
@@ -543,6 +689,12 @@ footer{
   width: 100%;
 }
 }
+@media (max-width: 1400px) {
+  .our-team .card-img-top {
+    left: 60px;
+    top: -80px;
+}
+}
 
 @media (max-width: 1200px) {
   .h-syncimg {
@@ -553,5 +705,32 @@ footer{
   justify-content: center;
   align-self: center;
 }
+.our-team .card-img-top {
+  height: 200px;
+  width: 200px;
+  left: 48px;
+  top: -60px;
+}
+.nav-logo {
+  width: 190px;
+}
 }
 
+@media (max-width: 991px) {
+.our-team .card-img-top {
+  left: 36%;
+}
+}
+
+@media (max-width: 767px) {
+  .our-team .card-img-top {
+    left: 31%;
+  }
+  }
+
+  @media (max-width: 575px) {
+    #healthblog{
+      padding-right: 1rem !important;
+      padding-left: 1rem !important;
+    }
+    }
