@@ -178,7 +178,7 @@ header .line {
   height: 80vh;
 }
 #homesection .content p {
-  word-spacing: 13px;
+  word-spacing: 10px;
   line-height: 2 !important;
 }
 a.btn.mt-md-3.contactus {
@@ -663,6 +663,7 @@ footer{
 #homesection .content p {
   font-size: 1rem;
   word-spacing: 10px;
+  line-height:1.7;
 }
 #homesection .content {
   height: 75vh;
