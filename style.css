@@ -150,7 +150,7 @@ header .line {
 #homesection {
   width: 100%;
   height: 90vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
     url('healthcare.jpg');
   background-position: top;
   background-size: cover;
