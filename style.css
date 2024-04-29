@@ -211,6 +211,7 @@ a.btn.mt-md-3.contactus:hover {
   background-size: cover !important;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(https://www.actuaries.digital/wp-content/uploads/2018/10/iStock-857146092-1600x750.jpg);
   color: #fff !important;
+  background-attachment:fixed;
 }
 #ourdiff .box {
   height: 100%;
