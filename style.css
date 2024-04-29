@@ -654,12 +654,20 @@ footer{
 .testinomial .container .row:nth-child(3) .col-lg-4:nth-child(3) .box .img-box {
   background-image: url("https://images.pexels.com/photos/5490226/pexels-photo-5490226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
+@media (max-width: 575px) {
+
+#homesection .content p {
+    font-size: 0.9rem;
+    word-spacing: 8px;
+    line-height: 1.5 !important;
+  text-align:justify;
+}
+}
 
 @media (max-width: 768px) {
 #healthblog .card-body {
   padding: 15px 23px;
 }
-
 }
 
 @media (max-width: 768px) {
@@ -678,12 +686,12 @@ footer{
 #homesection .content{
   padding:0 30px;
 }
-#homesection .content p {
-    font-size: 0.9rem;
-    word-spacing: 8px;
-    line-height: 1.5 !important;
-  text-align:justify;
+  #homesection .content p {
+  font-size: 1rem;
+  word-spacing: 10px;
+  line-height: 1.7 !important;
 }
+
 #homesection .content {
   height: 85vh;
 }
