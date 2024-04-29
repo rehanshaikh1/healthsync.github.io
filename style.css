@@ -177,6 +177,10 @@ header .line {
   flex-direction: column;
   height: 80vh;
 }
+#homesection .content p {
+  word-spacing: 13px;
+  line-height: 2 !important;
+}
 a.btn.mt-md-3.contactus {
   background: #4e22a6;
   padding: 15px 10px;
@@ -189,6 +193,7 @@ a.btn.mt-md-3.contactus:hover {
   background-color: #fff;
   color: #4e22a6;
 }
+
 .emphasis {
   color: #555;
   background-color: #eef;
