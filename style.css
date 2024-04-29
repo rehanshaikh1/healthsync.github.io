@@ -679,9 +679,10 @@ footer{
   padding:0 30px;
 }
 #homesection .content p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     word-spacing: 8px;
     line-height: 1.6 !important;
+  text-align:justify;
 }
 #homesection .content {
   height: 85vh;
