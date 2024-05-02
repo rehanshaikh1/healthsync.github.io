@@ -187,7 +187,7 @@ a.btn.mt-md-3.contactus {
 }
 a.btn.mt-md-3.contactus:hover {
   background-color: #fff;
-  color: #4e22a6;
+  color: #4e22a6 !important;
 }
 .emphasis {
   color: #555;
